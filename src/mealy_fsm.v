@@ -7,7 +7,7 @@ module mealy_fsm (
     output logic [3:0] cambio
 );
 
-    logic [3:0] saldo;
+    logic [3:0] saldo; 
 
     always_ff @(posedge clk or posedge reset) begin
         if (reset) begin
