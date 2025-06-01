@@ -1,17 +1,17 @@
 `timescale 1ns / 1ps
 module top_maquina (
-    input clk,
-    input reset,
-    input [1:0] moneda,
-    input comprarA,
-    input comprarB,
-    output listoA,
-    output listoB,
-    output [3:0] total,
-    output [3:0] cambio
+    input logic clk,
+    input logic reset,
+    input logic [1:0] moneda,
+    input logic comprarA,
+    input logic comprarB,
+    output logic listoA,
+    output logic listoB,
+    output logic [3:0] total,
+    output logic [3:0] cambio
 );
 
-    wire vendA, vendB;
+    logic vendA, vendB;
 
     moore_fsm moore_inst (
         .clk(clk),
@@ -36,3 +36,4 @@ module top_maquina (
     );
 
 endmodule
+
