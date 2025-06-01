@@ -1,0 +1,34 @@
+# Archivo de asignación de pines para TinyTapeout
+# Proyecto: Máquina expendedora FPGA
+# Autor: Katherine Castillo
+# Descripción: Asignación de pines para señales del proyecto en la plataforma TinyTapeout
+
+# Clock
+set_io clk 30
+
+# Reset (botón)
+set_io reset 29
+
+# Entradas comprarA y comprarB (botones)
+set_io comprarA 28
+set_io comprarB 27
+
+# Entradas moneda (2 bits)
+set_io moneda[0] 26
+set_io moneda[1] 25
+
+# Salidas listoA y listoB (LEDs)
+set_io listoA 24
+set_io listoB 23
+
+# Salida total (4 bits) LEDs
+set_io total[0] 22
+set_io total[1] 21
+set_io total[2] 20
+set_io total[3] 19
+
+# Salida cambio (4 bits) LEDs
+set_io cambio[0] 18
+set_io cambio[1] 17
+set_io cambio[2] 16
+set_io cambio[3] 15
